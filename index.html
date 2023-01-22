@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cool Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Work+Sans:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Source+Code+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <nav>
+      <div id="nav-logo-section" class="nav-section">
+        <a href="#"
+          ><button class="navStart" onclick="appearMain()">
+            <i class="fa-solid fa-layer-group | stack"></i>
+            <i class="fa-solid fa-angles-left | back"></i>
+          </button>
+        </a>
+      </div>
+      <div id="nav-link-section" class="nav-section">
+        <a href="#">ABOUT</a>
+        <a href="#" onclick="dissappearMain()">WORK</a>
+      </div>
+      <div id="nav-social-section" class="nav-section">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-codepen"></i></a>
+      </div>
+      <div id="nav-contact-section" class="nav-section">
+        <a href="#">GET IN TOUCH</a>
+      </div>
+    </nav>
+
+    <section class="wrapper">
+      <main data-appear="true">
+        <article data-index="0" data-status="active">
+          <div class="article-image-section article-section">
+            <div>
+              <img
+                src="https://wakeupwithzest.com/wp-content/uploads/2018/04/website-images-800-x-400-px-2.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="article-description-section article-section">
+            <p>
+              This is a recreation of a website (from scratch)
+              <!--         <a href="dylanbrouwer.design/work">dylanbrouwer.design/work</a> -->
+            </p>
+          </div>
+
+          <div class="article-title-section article-section">
+            <div>
+              <div class="slider" data-slide="up">RECREATION FROM SCRATCH</div>
+              <div class="slider2" data-slide="up">
+                <button onclick="dissappearMain()">SHOW THIS PROJECT</button>
+              </div>
+            </div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <div class="article-nav-section article-section">
+            <button
+              type="button"
+              class="article-nav-section"
+              onclick="handleLeftClick()"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button
+              type="button"
+              class="article-nav-section"
+              onclick="handleRightClick()"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article data-index="1" data-status="inactive">
+          <div class="article-image-section article-section">
+            <div>
+              <img
+                src="https://www.teahub.io/photos/full/276-2762658_4k-ultra-hd-wallpapers-for-pc.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="article-description-section article-section">
+            <p>
+              Backlit keyboards are helpful if you work in the field -
+              <span>especially if you work at night.</span>
+            </p>
+          </div>
+
+          <div class="article-title-section article-section">
+            <div>
+              <div class="slider1b" data-slide="up">
+                SUPER <br />
+                LIT KEYBOARD
+              </div>
+              <div class="slider2b" data-slide="up">SHOW THIS PROJECT</div>
+            </div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <div class="article-nav-section article-section">
+            <button
+              type="button"
+              class="article-nav-section"
+              onclick="handleLeftClick()"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button
+              type="button"
+              class="article-nav-section"
+              onclick="handleRightClick()"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article data-index="2" data-status="inactive">
+          <div class="article-image-section article-section">
+            <div>
+              <img
+                src="https://www.bhaktiphotos.com/wp-content/uploads/2019/10/Happy-Diwali-Images-1200x600.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="article-description-section article-section">
+            <p>
+              Diwali is a festival that is widely celebrated in India.
+              <span
+                >The festival symbolizes the victory of light over
+                darkness.</span
+              >
+            </p>
+          </div>
+
+          <div class="article-title-section article-section">
+            <div>
+              FESTIVAL <br />
+              OF <br />
+              LIGHTS
+            </div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <div class="article-nav-section article-section">
+            <button
+              type="button"
+              class="article-nav-section"
+              onclick="handleLeftClick()"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button
+              type="button"
+              class="article-nav-section"
+              onclick="handleRightClick()"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article data-index="3" data-status="inactive">
+          <div class="article-image-section article-section">
+            <div>
+              <img
+                src="https://d2908q01vomqb2.cloudfront.net/9e6a55b6b4563e652a23be9d623ca5055c356940/2022/11/03/nasa-asdi-climate-dataset-1200x600-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="article-description-section article-section">
+            <p>
+              Climate change refers to long-term shifts in
+              <span> temperatures and weather patterns.</span> It’s crucial that
+              we talk explicitly about it.
+            </p>
+          </div>
+
+          <div class="article-title-section article-section">
+            <div>CLIMATE CHANGE ISSUES</div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <div class="article-nav-section article-section">
+            <button
+              type="button"
+              class="article-nav-section"
+              onclick="handleLeftClick()"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button
+              type="button"
+              class="article-nav-section"
+              onclick="handleRightClick()"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+      </main>
+
+      <section class="project" id="project">
+        <div class="container">
+          <div class="work" id="work">WORK</div>
+
+          <div class="project-title">
+            THIS IS A FUN LITTLE PROJECT OF A COOL WEBSITE
+          </div>
+
+          <div class="project-image"></div>
+
+          <div class="project-info">
+            <div class="info-roles">
+              <div class="client">
+                <h5>Client</h5>
+                <h4>Purple Beautiful Illustrations From Freepik</h4>
+              </div>
+
+              <div class="role">
+                <h5>Role</h5>
+                <div class="info-details">
+                  <div class="work">ADOBE ILLUSTRATOR</div>
+                  <div class="work">CSS & JAVASCRIPT</div>
+                </div>
+              </div>
+
+              <div class="intro">
+                <h5>Introduction</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore quisquam expedita non porro dolores ipsam vitae
+                  perferendis dicta, illo a aspernatur consequuntur!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-slideshow">
+            <div class="image-slideshow">
+              <div class="slideshow-obj"></div>
+            </div>
+          </div>
+
+          <div class="project-gallery">
+            <div class="gallery-title">
+              <h4>LAUNDRY EXPRESS 24 <br />- ON THE GO</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio molestiae atque qui! Natus, odit! Deserunt ut, dicta
+                porro, eveniet facilis ab cupiditate esse, enim quo id numquam
+                eum odit suscipit?
+              </p>
+            </div>
+
+            <div class="gallery-first">
+              <div class="gallery-first-wrapper">
+                <div class="gallery-first-image">
+                  <img
+                    src="https://images.wallpaperscraft.com/image/single/clouds_horizon_photoshop_129739_800x1200.jpg"
+                    id="slideimage"
+                  />
+                  <h6>Clouds</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-second">
+              <div class="gallery-second-wrapper">
+                <div class="gallery-second-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div id="pointer"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
